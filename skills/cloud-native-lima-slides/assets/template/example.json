@@ -1,0 +1,159 @@
+{
+  "title": "Plantilla · Cloud Native Lima",
+  "subtitle": "Guía visual · componentes reutilizables",
+  "label": "PLANTILLA / CLOUD NATIVE LIMA",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "Tu próxima presentación.",
+      "accent": "La misma identidad.",
+      "series": "Cloud Native Lima",
+      "badge": "PLANTILLA DE DIAPOSITIVAS",
+      "message": "Una idea clara. Un encuentro que conecta.",
+      "tags": [
+        "Aprender",
+        "Construir",
+        "Conectar"
+      ],
+      "footer": "Ejemplo editable · sustituir el contenido",
+      "notes": "Esta presentación muestra los componentes del tema compartido; no anuncia un evento."
+    },
+    {
+      "layout": "cards",
+      "title": "Una idea.",
+      "accent": "Tres puntos para recordarla.",
+      "items": [
+        {
+          "icon": "book",
+          "title": "Aprender",
+          "text": "Conceptos claros y útiles"
+        },
+        {
+          "icon": "code",
+          "title": "Construir",
+          "text": "Una experiencia práctica"
+        },
+        {
+          "icon": "people",
+          "title": "Conectar",
+          "text": "Personas y conocimiento"
+        }
+      ],
+      "notes": "Mover el detalle aquí, fuera de la diapositiva."
+    },
+    {
+      "layout": "flow",
+      "title": "Del objetivo",
+      "accent": "a la siguiente acción.",
+      "items": [
+        {
+          "icon": "calendar",
+          "title": "Preparar",
+          "text": "Objetivo y audiencia"
+        },
+        {
+          "icon": "check",
+          "title": "Validar",
+          "text": "Recursos y contenido"
+        },
+        {
+          "icon": "people",
+          "title": "Compartir",
+          "text": "Práctica y comunidad"
+        },
+        {
+          "icon": "chart",
+          "title": "Mejorar",
+          "text": "Escuchar y ajustar"
+        }
+      ],
+      "dark": true,
+      "footer": "Ejemplo de proceso · adaptar al encuentro"
+    },
+    {
+      "layout": "metrics",
+      "title": "Cifras claras.",
+      "accent": "Siempre con contexto.",
+      "items": [
+        {
+          "value": "3 h",
+          "title": "Duración",
+          "text": "Propuesta de ejemplo"
+        },
+        {
+          "value": "30–40",
+          "title": "Participantes",
+          "text": "Cupo por acordar"
+        },
+        {
+          "value": "1",
+          "title": "Práctica",
+          "text": "Objetivo sugerido"
+        }
+      ],
+      "footer": "Valores ilustrativos · no son resultados históricos"
+    },
+    {
+      "layout": "split",
+      "title": "Dos equipos.",
+      "accent": "Un propósito compartido.",
+      "items": [
+        {
+          "label": "COMUNIDAD",
+          "title": "Contenido y facilitación",
+          "points": [
+            "Diseño de la actividad",
+            "Facilitadores",
+            "Materiales"
+          ]
+        },
+        {
+          "label": "INSTITUCIÓN",
+          "title": "Enlace y espacio",
+          "points": [
+            "Docente enlace",
+            "Aula e internet",
+            "Convocatoria"
+          ]
+        }
+      ],
+      "footer": "Distribución propuesta"
+    },
+    {
+      "layout": "links",
+      "title": "Fuentes a mano.",
+      "accent": "Detalles en las notas.",
+      "items": [
+        {
+          "icon": "people",
+          "title": "Comunidad",
+          "url": "https://ocgroups.dev/cncf/group/nmmzkrs"
+        },
+        {
+          "icon": "book",
+          "title": "Programa CNCF",
+          "url": "https://github.com/cncf/communitygroups"
+        },
+        {
+          "icon": "shield",
+          "title": "Código de conducta",
+          "url": "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+        }
+      ],
+      "notes": "Consultar las fuentes vigentes antes de describir requisitos o políticas."
+    },
+    {
+      "layout": "closing",
+      "title": "La siguiente conversación",
+      "accent": "empieza aquí.",
+      "callout": "Conectemos",
+      "message": "Conozca Cloud Native Lima",
+      "tags": [
+        "Objetivo",
+        "Audiencia",
+        "Próximo paso"
+      ],
+      "footer": "El QR abre la comunidad; no agenda una reunión"
+    }
+  ]
+}

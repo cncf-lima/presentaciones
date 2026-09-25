@@ -1,3 +1,4 @@
+from slidekit import icon, cards, flow
 """Presentación de invitación universitaria, con diseño minimalista y logo A."""
 from pathlib import Path
 import base64, html, re, json
@@ -5,21 +6,6 @@ from datetime import datetime
 
 ROOT=Path(__file__).resolve().parent
 URL='https://ocgroups.dev/cncf/group/nmmzkrs'
-PATHS={
-'school':'<path d="m2 8 10-5 10 5-10 5zM6 10v7c4 3 8 3 12 0v-7m4-2v8"/>',
-'people':'<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 5"/>',
-'book':'<path d="M3 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-3H3zM21 4h-6a3 3 0 0 0-3 3v14a4 4 0 0 1 4-3h5z"/>',
-'code':'<path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-16-2 20"/>',
-'calendar':'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 5h3m3 0h3"/>',
-'check':'<path d="m4 12 5 5L20 6"/>',
-'cloud':'<path d="M6 19a5 5 0 0 1-1-10 7 7 0 0 1 13-2 6 6 0 0 1 0 12z"/>',
-'shield':'<path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6zM8 12l3 3 5-6"/>',
-'link':'<path d="m9 15 6-6m-5-4 2-2a5 5 0 0 1 7 7l-3 3m-2 6-2 2a5 5 0 0 1-7-7l3-3"/>',
-'heart':'<path d="M12 21 3.5 12.5A5.5 5.5 0 0 1 12 5.5a5.5 5.5 0 0 1 8.5 7z"/>',
-}
-def icon(name):return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+PATHS[name]+'</svg>'
-def cards(items):return '<div class="tiles cols-'+str(len(items))+'">'+''.join('<article class="tile">'+icon(i)+'<h3>'+h+'</h3><p>'+p+'</p></article>' for i,h,p in items)+'</div>'
-def flow(items):return '<div class="flow">'+''.join('<article class="flow-step"><span class="stepno">'+str(n).zfill(2)+'</span>'+icon(i)+'<h3>'+h+'</h3><p>'+p+'</p></article>' for n,(i,h,p) in enumerate(items,1))+'</div>'
 
 slides=[]
 def add(title,headline,body,footer,note,dark=False,refs=''):slides.append((title,headline,body,footer,note,dark,refs))
@@ -68,18 +54,11 @@ for offset in range(0,len(valid),10):
   rows.append('<a class="archive-row" href="'+d['url']+'" target="_blank" rel="noopener"><time>'+short+'</time><span>'+html.escape(title)+'</span><small>'+label+' ↗</small></a>')
  add('Archivo · '+str(offset//10+1),'Nuestro historial.<em> '+str(offset//10+1)+' / 3</em>','<div class="archive-list">'+''.join(rows)+'</div>','Anexo · fichas públicas revisadas el 25/09/2026','Se revisaron las 34 fichas del historial público: cuatro registros test/testte se excluyen y se conservan 30 fichas. Seis pertenecen al archivo heredado Cloud Native Perú de 2018–2019; una corresponde a apoyo a KubeFest. Un registro publicado no demuestra asistencia efectiva ni valida automáticamente todos los datos de su descripción. El informe revision-eventos.md documenta las inconsistencias.',refs='<a href="'+URL+'" target="_blank" rel="noopener">Fuente: Open Community Groups ↗</a>')
 
+from slidekit import render_document, section
 sections=[]
 for n,(title,headline,body,footer,note,dark,refs) in enumerate(slides,1):
- sections.append(f'<section class="slide organizer {"dark" if dark else ""}" data-title="{html.escape(title)}" aria-labelledby="title-{n}" {"hidden" if n>1 else ""}><p class="eyebrow">{n:02d} / CLOUD NATIVE UNIVERSITY</p><h2 id="title-{n}">{headline}</h2><div class="organizer-content">{body}</div><div class="bottomline"><span>{footer}</span><span class="source-links">{refs}</span></div><template class="speaker-note"><h3>{title}</h3><p>{html.escape(note)}</p><p>{refs}</p></template></section>')
-
-base=(ROOT/'onboarding.template.html').read_text()
-base=re.sub(r'<main class="stage".*?</main>','<main class="stage" id="deck" aria-label="Invitación a universidades">'+''.join(sections)+'</main>',base,flags=re.S)
-base=base.replace('Organizadores · Cloud Native Lima','Cloud Native University · Invitación a universidades').replace('Onboarding de organizadores','Invitación a universidades').replace('aria-valuemax="15"','aria-valuemax="10"').replace('01 / 15','01 / 10')
-base=base.replace('aria-valuemax="10"',f'aria-valuemax="{len(slides)}"').replace('01 / 10',f'01 / {len(slides)}')
-base=re.sub(r'<meta name="description"[^>]+>','<meta name="description" content="Invitación a universidades: colaboración con Cloud Native Lima para experiencias prácticas de Cloud Native University.">',base)
-base=re.sub(r'<style>.*?</style>', '<style>'+ (ROOT/'universidades.css').read_text()+'</style>',base,flags=re.S)
-(ROOT/'universidades.template.html').write_text(base)
-for name,path in {'{{LOGO}}':'identidad/kit-opcion-a/tamanos/azul/logo/logo-azul-800px.png','{{ICON}}':'identidad/kit-opcion-a/tamanos/azul/icono/icono-azul-512px.png','{{QR}}':'identidad/qr-comunidad.png'}.items():
- base=base.replace(name,'data:image/png;base64,'+base64.b64encode((ROOT/path).read_bytes()).decode())
-for name in ['cloud-native-university.html','presentacion-universidades.html']:(ROOT/name).write_text(base)
-print(f'Invitación universitaria: {len(slides)} diapositivas, logo A, HTML autónomo.')
+ sections.append(section(n,title,headline,body,footer,note,dark,refs,'CLOUD NATIVE UNIVERSITY'))
+output=render_document('Cloud Native University','Invitación a universidades',sections)
+for name in ['cloud-native-university.html','presentacion-universidades.html']:
+ (ROOT/name).write_text(output)
+print(f'{len(slides)} diapositivas · tema compartido Cloud Native Lima.')
