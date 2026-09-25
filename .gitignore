@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.playwright-mcp/
+# Alias locales generados; las versiones canónicas se versionan.
+onboarding-cloud-native-lima.html
+presentacion-universidades.html

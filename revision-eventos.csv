@@ -1,0 +1,35 @@
+fecha,evento,clasificacion,revision,fuente
+28/08/2026,KubeBeer Lima #2,Comunidad,Encuentro social y networking; no es una actividad universitaria.,https://ocgroups.dev/cncf/group/nmmzkrs/event/zmee2ea
+14/08/2026,KCNA Lima Study Group #5,Comunidad,"Cierre de la serie: Helm, service mesh, observabilidad y entrega de aplicaciones.",https://ocgroups.dev/cncf/group/nmmzkrs/event/evpte4w
+12/08/2026,KCNA Lima Study Group #4,Comunidad,"Almacenamiento, escalamiento y ecosistema CNCF.",https://ocgroups.dev/cncf/group/nmmzkrs/event/hny9fuy
+07/08/2026,KCNA Lima Study Group #3,Comunidad,"Recursos, scheduling, redes y seguridad en Kubernetes.",https://ocgroups.dev/cncf/group/nmmzkrs/event/qrzcw7j
+05/08/2026,KCNA Lima Study Group #2,Comunidad,"Fundamentos, instalación, arquitectura y recursos de Kubernetes.",https://ocgroups.dev/cncf/group/nmmzkrs/event/nqrzstg
+03/08/2026,KCNA Lima Study Group #1,Comunidad,"Inicio de preparación KCNA con Max Zeballos; dinámica, recursos y práctica.",https://ocgroups.dev/cncf/group/nmmzkrs/event/pdkhaus
+09/07/2026,Pre-KCD Lima 2026 Open Space,Comunidad,Open Space en Interbank; adopción de Kubernetes y encuentro previo al KCD.,https://ocgroups.dev/cncf/group/nmmzkrs/event/r5kvxau
+13/06/2026,KUBEFEST: TECNOLOGÍAS CLOUD NATIVE QUE ESTÁN TRANSFORMANDO EL MUNDO,Colaboración de apoyo,"IA, Zero Trust y platform engineering; la ficha declara participación de apoyo, no organización propia.",https://ocgroups.dev/cncf/group/nmmzkrs/event/tu52ja4
+25/04/2026,Cloud Native Lima University #3 - UTEC,University,"Tercera edición University: introducción a aplicaciones, contenedores, microservicios e infraestructura; sin agenda desglosada.",https://ocgroups.dev/cncf/group/nmmzkrs/event/jjmz4m4
+13/12/2025,Cloud Native Lima University #2 - PUCP,University,Segunda edición University en la Facultad de Ciencias e Ingeniería; no publica agenda desglosada.,https://ocgroups.dev/cncf/group/nmmzkrs/event/kw8a6c8
+11/10/2025,Cloud Native Lima University #1 - UNI - Cloud Native 101,University,"Primera edición University: microservicios, Kubernetes, comunidad, certificaciones y GitOps. Agenda con cuatro charlas.",https://ocgroups.dev/cncf/group/nmmzkrs/event/b6rhg7e
+15/08/2025,Cloud Native Lima #9 – Kubernetes Release Shadow & FinOps,Comunidad,Contribución al release de Kubernetes como Shadow y optimización de costos con FinOps.,https://ocgroups.dev/cncf/group/nmmzkrs/event/w6dhfj8
+17/07/2025,Cloud Native Lima #8,Comunidad,"Mesa redonda de observabilidad, seguridad e iniciación cloud native. El resumen del listado recicla contenido del meetup #6.",https://ocgroups.dev/cncf/group/nmmzkrs/event/9gsv4v8
+09/07/2025,Cloud Native Lima #7 – Becas CNCF & GitOps para Todos,Comunidad,Voluntariado y experiencia en KubeCon; GitOps y Backstage. El resumen del listado recicla el laboratorio de clúster doméstico.,https://ocgroups.dev/cncf/group/nmmzkrs/event/nprt52c
+14/11/2024,"Cloud Native Lima #6: IA Generativa, Seguridad con eBPF y GitOps",Comunidad,IA con Podman AI Lab y Quarkus; eBPF; GitOps en Kubernetes.,https://ocgroups.dev/cncf/group/nmmzkrs/event/dcb369y
+06/11/2024,Configura tu Propio Clúster y Lleva la Nube a tu Hogar - Part 1,Comunidad,"Laboratorio doméstico: hardware, sistema operativo, kubeadm/k3s, redes y almacenamiento.",https://ocgroups.dev/cncf/group/nmmzkrs/event/pf482bd
+12/07/2024,Cloud Native Lima - Meetup #5 - Camino a KCD Lima Perú 2024,Comunidad,"Camino a KCD, programa Kubestronaut y alternativas open source en la nube.",https://ocgroups.dev/cncf/group/nmmzkrs/event/gu87es9
+30/05/2024,Preparación CKAD ( Certified Kubernetes Application Developer  Practice Exams),Comunidad,Preparación CKAD mediante simulacros; no equivale a certificación emitida por la comunidad.,https://ocgroups.dev/cncf/group/nmmzkrs/event/7fbdg9q
+29/04/2024,Preparación KCNA (Kubernetes and Cloud Native Associate Practice Exams),Comunidad,"Preparación KCNA con simulacros y recursos; ficha similar a la del 23 de abril, con fecha distinta.",https://ocgroups.dev/cncf/group/nmmzkrs/event/ememht7
+23/04/2024,Preparación KCNA (Kubernetes and Cloud Native Associate Practice Exams),Comunidad,"Preparación KCNA con simulacros y recursos; conservar como sesión separada, no deduplicar solo por título.",https://ocgroups.dev/cncf/group/nmmzkrs/event/6hhs3ff
+19/04/2024,Cloud Native Lima - Meetup #4 - Drinks & Lighting Talks,Comunidad,"Charlas breves sobre KubeCon/KCD, ciberseguridad, OpenTelemetry y comunidad.",https://ocgroups.dev/cncf/group/nmmzkrs/event/k6qzm6r
+18/01/2024,Cloud Native Lima - Meetup #3,Comunidad,"Encuentro híbrido: configuración y secretos en Kubernetes, y almacenamiento para Kafka.",https://ocgroups.dev/cncf/group/nmmzkrs/event/j29xvkw
+20/12/2023,Cloud Native Lima - Meetup #2,Comunidad,Encuentro híbrido con introducción al release de Kubernetes y colaboración en traducciones.,https://ocgroups.dev/cncf/group/nmmzkrs/event/8fgq8z4
+11/12/2023,test,Prueba — excluir,Registro de prueba; no usar como evidencia de actividad en UTP.,https://ocgroups.dev/cncf/group/nmmzkrs/event/h3ur527
+30/11/2023,Cloud Native Lima - Meetup #1,Comunidad,Inicio de la serie Cloud Native Lima: contribución open source y fundamentos Kubernetes.,https://ocgroups.dev/cncf/group/nmmzkrs/event/gzxebca
+30/11/2023,test,Prueba — excluir,Registro de prueba; excluido de la presentación.,https://ocgroups.dev/cncf/group/nmmzkrs/event/ne8y2kj
+28/11/2023,test,Prueba — excluir,Registro de prueba; excluido de la presentación.,https://ocgroups.dev/cncf/group/nmmzkrs/event/ppj7acf
+13/11/2023,testte,Prueba — excluir,Registro de prueba; excluido de la presentación.,https://ocgroups.dev/cncf/group/nmmzkrs/event/msey93f
+23/12/2019,Meetup Diciembre de Cloud Native Perú,Archivo heredado,"Archivo Cloud Native Perú: serverless con KEDA, GitOps y observabilidad.",https://ocgroups.dev/cncf/group/nmmzkrs/event/jw3tmg5
+28/10/2019,Meetup Octubre Cloud Native Perú,Archivo heredado,"Archivo Cloud Native Perú: OAuth 2, Prometheus y escalamiento de Kubernetes.",https://ocgroups.dev/cncf/group/nmmzkrs/event/dx4qd66
+19/10/2019,Meetup Online - Do it yourself your Kubernetes,Archivo heredado,"Encuentro virtual conjunto con comunidades de Perú, Guadalajara y México; ubicación estructurada genérica.",https://ocgroups.dev/cncf/group/nmmzkrs/event/24cp8d3
+27/08/2019,Meetup Agosto - Relanzamiento de la Comunidad,Archivo heredado,"Archivo Cloud Native Perú: fundamentos, patrones y chaos engineering.",https://ocgroups.dev/cncf/group/nmmzkrs/event/7cbw7s7
+19/04/2018,Meetup Abril,Archivo heredado,Archivo heredado: Kubernetes 101 y Jenkins X.,https://ocgroups.dev/cncf/group/nmmzkrs/event/a8pa4tz
+15/02/2018,Meetup #1,Archivo heredado,Archivo heredado: introducción cloud native y Docker Swarm.,https://ocgroups.dev/cncf/group/nmmzkrs/event/hzetkne
