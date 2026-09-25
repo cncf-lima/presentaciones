@@ -12,6 +12,14 @@ Presentaciones, plantilla y skill para crear diapositivas de Cloud Native Lima c
 
 Descarga el HTML y ábrelo en tu navegador. Incluye las imágenes y funciona sin servidor. Navega con flechas o selector; «Ver todas» muestra el conjunto; «Notas y fuentes» abre los detalles. «PDF / Imprimir» exporta todas las diapositivas.
 
+## Calendario de eventos
+
+[Calendario interactivo · descargar HTML](https://github.com/cncf-lima/presentaciones/raw/refs/heads/main/calendario.html) · [PDF 2027](calendario-2027.pdf) · [CSV editable](calendario/eventos.csv) · [Plan y criterios](calendario/README.md)
+
+En 2027: **12 recurrentes** (4 University, 4 Rejects, 4 Specialization) y **2 fijos anuales propuestos** (apertura y cierre). Incluye también tres propuestas para el cierre de 2026. El tipo de evento y su confirmación son campos separados: todas las actividades están propuestas, con día y sede por acordar. Rejects tiene un formato provisional por validar.
+
+Editar `calendario/eventos.json` y ejecutar `python3 scripts/build_calendar.py`. El HTML funciona sin servidor, filtra por año/línea/tipo y exporta el CSV completo. Para actualizar el PDF de 2027, restablecer los filtros y usar «Imprimir vista».
+
 ## Generar nuevas diapositivas
 
 Requiere Python 3, sin paquetes adicionales. Copia el [JSON de ejemplo](skills/cloud-native-lima-slides/assets/template/example.json), adapta sus textos y ejecuta:
